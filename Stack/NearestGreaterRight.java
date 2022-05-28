@@ -5,7 +5,7 @@ package Stack;
 // in same order as input.
 import java.util.Stack;
 
-class NextGreaterElement {
+class NearestGreaterRight {
 
 	static int arr[] = { 1,3,0,0,1,2,4 };
 
