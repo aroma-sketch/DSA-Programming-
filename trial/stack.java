@@ -1,4 +1,4 @@
-package l;
+package trial;
 
 class Stack {
     static final int MAX = 1000;
