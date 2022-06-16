@@ -65,7 +65,7 @@ width[i]=right[i]-left[i]-1;
     // Driver method
     public static void main(String[] args) {
         calculateMaxArea(arr, n);
-        System.out.println  ("Maximum area of given histogram data is = "+max_area);
+        System.out.println  ("Maximum area of given histogram is = "+max_area);
     }
 
 }
