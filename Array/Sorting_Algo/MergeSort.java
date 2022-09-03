@@ -1,4 +1,4 @@
-package Array;
+package Array.Sorting_Algo;
 import java.io.*;
 import java.util.*;
 

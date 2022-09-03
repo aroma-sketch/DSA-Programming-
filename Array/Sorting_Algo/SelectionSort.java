@@ -1,4 +1,4 @@
-package Array;
+package Array.Sorting_Algo;
 import java.util.*;
 import java.io.*;
 //time complexity os 0(n*n)
