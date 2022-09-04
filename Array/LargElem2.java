@@ -17,6 +17,10 @@ public class LargElem2 {
      //elements
     System.out.print("elem in array:");
     int a[]= new int[n];
+    if(n<2)
+    {
+        System.out.println("No element found");
+    }
     for( i=0;i<n;i++)
     {
         a[i]=ob.nextInt();
@@ -25,6 +29,7 @@ public class LargElem2 {
     //algo
 
     int largest=0,second=0;
+   
      for(i=0;i<n;i++)
      {
         if(largest<a[i])
@@ -38,8 +43,15 @@ public class LargElem2 {
             second=a[i];
          }
      }
-     System.out.println("second largest:"+second);
-     System.out.println(" largest:"+largest);
+     if (second == 0)
+     {
+        System.out.println("No element found"); 
+     }
+     else{
+        System.out.println("second largest:"+second);
+     }
+    //  System.out.println("second largest:"+second);
+    //  System.out.println(" largest:"+largest);
 }
 }
 
