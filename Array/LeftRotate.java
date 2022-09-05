@@ -4,10 +4,8 @@ import java.util.*;
 
 //left rotating the array !!
 //assigning values to a new array
-
 //can be done using a temp variable, assigning it value of n-1 
-//and all are shifting for i+1 to i
-
+//and all are shifting for i+1
 class  LeftRotate{
    static void sorted_array(int a[],int n)
 {
