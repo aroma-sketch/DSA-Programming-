@@ -1,6 +1,7 @@
 package CollectionFramework.Arraylist;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Collections;
 
 public class First {
  public static void main(String[] args) {
@@ -8,10 +9,22 @@ public class First {
     list.add(1);
     list.add(2);
     list.add(3);
+    list.add(23);
+    list.add(32);
     System.out.println(list);
  
  list.add(4); // add at end
  System.out.println(list);
+
+
+
+ System.out.println(Collections.min(list));
+ 
+ System.out.println(Collections.max(list));
+ 
+ System.out.println(Collections.frequency(list,3));
+
+
 
  list.add(0,0); // method overloading
  System.out.println(list);
@@ -40,6 +53,8 @@ public class First {
 
     list.clear();  //remove element at index 0
     System.out.println(list);
+
+    
 
 }
 
