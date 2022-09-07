@@ -23,4 +23,24 @@ public class First {
     list.addAll(newlist);  // adding in a new array list
     System.out.println(list);
 
-}}
+    System.out.println(list.get(3)); // getting element at index
+
+    list.remove(0);  //remove element at index 0
+    System.out.println(list);
+    
+    list.remove(Integer.valueOf(20));  //remove specfic element
+    System.out.println(list);
+
+    
+    list.set(2,1000);  //remove element at index 0
+    System.out.println(list);
+
+    list.contains(1000);  //remove element at index 0
+    System.out.println(list);
+
+    list.clear();  //remove element at index 0
+    System.out.println(list);
+
+}
+
+}
