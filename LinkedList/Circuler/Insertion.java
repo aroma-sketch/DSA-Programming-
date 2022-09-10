@@ -1,3 +1,4 @@
+package Circuler;
 
 import java.util.*;
 //insertion in linkedList 
@@ -16,6 +17,7 @@ public class Insertion {
     }
 
     Node head = null;
+    Node tail=null;
 
     public void creation() {
         int n;
@@ -28,6 +30,8 @@ public class Insertion {
 
             if (head == null) {
                 head = new_node;
+                tail=new_node;
+                new_node.next=head;
             }
              else 
              {
@@ -38,16 +42,20 @@ public class Insertion {
                 case 1:  // insertion at begining
                 new_node.next = head;
                 head = new_node;
+                tail.next=head;
                 break;
 
                 case 2:  // insertion at end
                 Node temp = head;
+              //  Node tail=new_node;
              
                     while (temp.next!= null) 
                     {
                         temp = temp.next;
                     }
                     temp.next=new_node;
+
+             
                 break;
 
                 case 3:   //insertion at specific position
@@ -82,13 +90,15 @@ public class Insertion {
             System.out.println("not exist");
         } else
          {
-            while (temp != null)
+           do
              {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
             }
+            while(temp!=head);
         }
     }
+    
 
     public static void main(String[] args) {
         Insertion i = new Insertion();
