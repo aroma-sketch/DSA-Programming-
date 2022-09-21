@@ -1,9 +1,10 @@
+
 package Singly;
 
 import java.util.*;
 //insertion at begining 
 
-public class insertionBegin {
+public class Reverselist {
 
     // structure of node
     static class Node {
@@ -52,46 +53,25 @@ public class insertionBegin {
         }
     }
 
+    public void reverse(){
+        Node curr=head;
+        Node prev=null;
+        
+        while(curr!=null)
+        {
+            Node temp=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=temp;
+        }
+        System.out.println(prev+" ");
+            }
 
     public static void main(String[] args) {
-        insertionBegin i = new insertionBegin();
+        Reverselist i = new Reverselist();
         i.creation();
         i.traverse();
+        i.reverse();
     }
 
 }
-
-// Node insertAtBeginning(Node head, int x)
-//     {
-//            Node new_node = new Node(x);
-//         // code here
-//         if(head==null)
-//         {
-//             head=new_node;
-//         }
-//         else
-//         {
-//             new_node.next=head;
-//             head=new_node;
-//         }
-//         return head;
-//     }
-
-//  //Function to insert a node at the end of the linked list.
-//  Node insertAtEnd(Node head, int x)
-//  {
-//      // code here
-//       Node new_node = new Node(x);
-//      Node temp=head;
-//       if (head == null) {
-//              head = new_node;
-//          }
-//          else
-//          {
-//      while(temp.next!=null)
-//      {
-//          temp=temp.next;
-//          }
-//          temp.next=new_node;}
-//            return head;
-//  }
