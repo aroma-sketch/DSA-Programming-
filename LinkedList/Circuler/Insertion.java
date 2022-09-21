@@ -90,15 +90,14 @@ public class Insertion {
             System.out.println("not exist");
         } else
          {
-           do
+           do{
              {
                 System.out.print(temp.data + " ");
                 temp = temp.next;
-            }
-            while(temp!=head);
-        }
-    }
-    
+            }}
+            while(temp!=null);
+        
+    }}
 
     public static void main(String[] args) {
         Insertion i = new Insertion();

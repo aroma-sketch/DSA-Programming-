@@ -78,7 +78,8 @@ public class Deletion {
         int n;
         Scanner ob = new Scanner(System.in);
         do {
-   if (head == null) {
+   if (head == null)
+    {
         System.out.println("ll is empty");
             }
              else 
