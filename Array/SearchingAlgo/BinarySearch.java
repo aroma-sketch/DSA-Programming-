@@ -1,4 +1,5 @@
-package Array;
+
+package Array.SearchingAlgo;
 import java.io.*;
 import java.util.*;
 
