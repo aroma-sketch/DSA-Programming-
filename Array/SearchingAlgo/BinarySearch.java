@@ -2,7 +2,7 @@
 package Array.SearchingAlgo;
 import java.io.*;
 import java.util.*;
-
+// binary search algorithm
  class  BinarySearch
  {
    int search( int a[],int start,int end,int ele)
